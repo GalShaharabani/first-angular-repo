@@ -1,1 +1,16 @@
-<h1>my first angular site</h1>
+<div align="center">
+    <h1>My first angular site</h1>
+    <p>{{date | date:'EEEE dd/MMMM/yyyy'}}</p>
+    <input type="text" [(ngModel)]="id" placeholder="Your ID" value="" required>
+    <br>
+    <input type="text" [(ngModel)]="firstName" placeholder="Your First Name" value="" required>
+    <br> 
+    <input type="text" [(ngModel)]="lastName" placeholder="Your Last Name" value="" required>
+    <br>
+    <br>
+    <p>↓----YOUR RESULT----↓</p>
+    <input type="text" value="{{id}}, {{firstName}}, {{lastName}}">
+    <br>
+    <input class="btn btn-primary" type="button" value="click" (click)="popup()">
+    
+</div>
